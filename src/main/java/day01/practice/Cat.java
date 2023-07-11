@@ -1,10 +1,7 @@
 package day01.practice;
 
-import day01.solved.packageOne.Dog;
-
 public class Cat {
 
-	private boolean hasDots;
 	private String color;
 	private int age;
 	private String speak;
