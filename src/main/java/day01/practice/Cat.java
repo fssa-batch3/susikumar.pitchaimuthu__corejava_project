@@ -39,7 +39,7 @@ public class Cat {
 
 	public void setSpeak(String speak) {
 		this.speak = speak;
-	}
+	} 
 
 	public static void main(String[] args) {
 
