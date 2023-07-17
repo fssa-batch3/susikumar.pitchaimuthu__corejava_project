@@ -34,8 +34,8 @@ class Account {
     boolean withdraw(Account account, double amount) throws Exception;
     double getBalance(Account account); // Pass the Account object as a parameter
 }
-
-// Implementation
+ 
+// Implementation 
 class AxisATM implements ATM {
     private static final double WITHDRAWAL_CHARGE = 5;
 
@@ -73,7 +73,7 @@ class IciciATM implements ATM {
     public boolean deposit(Account account, double amount) {
         account.setBalance(account.getBalance() + amount);
         return true;
-    }
+    } 
 
     @Override
     public boolean withdraw(Account account, double amount) throws Exception {
@@ -97,7 +97,7 @@ class IciciATM implements ATM {
 }
 
 
-
+ 
 
 
 
