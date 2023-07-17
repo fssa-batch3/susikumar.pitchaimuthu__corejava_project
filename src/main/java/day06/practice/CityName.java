@@ -15,12 +15,9 @@ public class CityName {
 
 		System.out.println("ArrayList with duplicates: " + cityList);
 
-
 		List<String> newList = cityList.stream().distinct().collect(Collectors.toList());
-
 
 		System.out.println("ArrayList with duplicates removed: " + newList);
 	}
 
 }
-  
