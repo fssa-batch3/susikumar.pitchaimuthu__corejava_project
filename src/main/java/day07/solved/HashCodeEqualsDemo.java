@@ -32,7 +32,6 @@ class Employee {
 			return false;
 		return true;
 	}
-
 }
 
 public class HashCodeEqualsDemo {
