@@ -1,30 +1,49 @@
 package day08.practice;
 
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Scanner;
 
 public class DepartmentName {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.print("Enter the string: ");
-		String input = scanner.nextLine();
+		System.out.println("Enter the number of inputs: ");
+		int number = scanner.nextInt();
+		scanner.nextLine(); // Consume the remaining newline character after reading the integer
+		System.out.println("Enter the strings: ");
 
-		input = input.trim().toLowerCase();
+		String[] array = new String[number];
 
-		// Split the input into individual names using comma as the separator
-		String[] names = input.split(", ");
-
-		// Create a HashMap to store the count of each name
-		HashMap<String, Integer> department = new HashMap<>();
-
-		for (String name : names) {
-			department.put(name, department.getOrDefault(name, 0) + 1);
+		for (int i = 0; i < number; i++) {
+			array[i] = scanner.nextLine();
 		}
 
-		System.out.println(department);
+		// Create a HashMap to store the list of employees for each department
+		HashMap<String, List<String>> department = new HashMap<>();
+
+		for (int i = 0; i < array.length; i++) {
+			String[] splitValue = array[i].split(",");
+			String departName = splitValue[0].trim();
+			String employeeName = splitValue[1].trim();
+
+			if (department.containsKey(departName)) {
+				List<String> employees = department.get(departName);
+				employees.add(employeeName);
+			} else {
+				List<String> employees = new ArrayList<>();
+				employees.add(employeeName);
+				department.put(departName, employees);
+			}
+		}
+
+		// Output DeptName, List of Employees
+		for (String departmentName : department.keySet()) {
+			List<String> employees = department.get(departmentName);
+			System.out.println(departmentName + ": " + employees);
+		}
 
 		scanner.close();
 	}
-
 }
