@@ -11,7 +11,7 @@ public class DepartmentName {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the number of inputs: ");
 		int number = scanner.nextInt();
-		scanner.nextLine(); // Consume the remaining newline character after reading the integer
+		scanner.nextLine();
 		System.out.println("Enter the strings: ");
 
 		String[] array = new String[number];
@@ -20,7 +20,6 @@ public class DepartmentName {
 			array[i] = scanner.nextLine();
 		}
 
-		// Create a HashMap to store the list of employees for each department
 		HashMap<String, List<String>> department = new HashMap<>();
 
 		for (int i = 0; i < array.length; i++) {
@@ -38,7 +37,6 @@ public class DepartmentName {
 			}
 		}
 
-		// Output DeptName, List of Employees
 		for (String departmentName : department.keySet()) {
 			List<String> employees = department.get(departmentName);
 			System.out.println(departmentName + ": " + employees);
