@@ -17,11 +17,20 @@ public class Task {
 		this.deadline = LocalDate.parse(date);
 	}
 
+	
+	public void setName (String name) {
+		this.name = name;
+	}
+	public String getName() {
+		return name;
+	}
+	
 	@Override
 	public String toString() {
 		return "Task : " + name + ", Deadline :" + deadline + ", Id :" + id;
 	}
 
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj) {

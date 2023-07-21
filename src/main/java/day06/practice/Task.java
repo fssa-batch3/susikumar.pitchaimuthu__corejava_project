@@ -15,10 +15,19 @@ class addTask {
 		this.description = description;
 	}
 
+	public void setName(String taskName) {
+		this.taskName = taskName;
+	}
+
+	public String getName() {
+		return taskName;
+	}
+
 	@Override
 	public String toString() {
 		return "taskID: " + taskId + ", taskName: " + taskName + ", description: " + description;
 	}
+
 }
 
 public class Task {
