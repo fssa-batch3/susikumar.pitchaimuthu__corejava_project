@@ -25,7 +25,7 @@ class EmailValidator {
 		if (emailId == null) {
 			throw new ValidateEmailException("Email ID is null");
 		} else if (emailId.isEmpty()) {
-			throw new ValidateEmailException("Email ID is empty");
+			throw new ValidateEmailException("Email ID is null");
 		} else if (!Pattern.matches(EMAIL_PATTERN, emailId)) {
 			throw new ValidateEmailException("Invalid email format");
 		}
