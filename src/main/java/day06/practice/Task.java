@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 class addTask {
 
-	private int taskId;
+	 int taskId;
 	String taskName;
-	private String description;
+	 String description;
 
 	// Constructor
 	public addTask(int taskId, String taskName, String description) {
@@ -21,6 +21,14 @@ class addTask {
 
 	public String getName() {
 		return taskName;
+	}
+	
+	public int getId() {
+		return taskId;
+	}
+	
+	public String getDescription(){
+		return description;
 	}
 
 	@Override

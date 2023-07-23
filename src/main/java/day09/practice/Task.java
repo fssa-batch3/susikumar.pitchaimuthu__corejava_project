@@ -14,6 +14,8 @@ class AddTask implements Comparable<AddTask> {
 		this.deadLine = LocalDate.parse(date);
 	}
 
+	
+
 	public LocalDate getDeadLine() {
 		return deadLine;
 	}

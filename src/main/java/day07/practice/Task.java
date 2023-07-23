@@ -7,9 +7,9 @@ import java.util.Objects;
 
 public class Task {
 
-	private int id;
-	private String name;
-	private LocalDate deadline;
+	 int id;
+	 String name;
+	 LocalDate deadline;
 
 	public Task(String name, int id, String date) {
 		this.name = name;
@@ -23,6 +23,14 @@ public class Task {
 	}
 	public String getName() {
 		return name;
+	}
+	
+	public LocalDate getDeadLine() {
+		return deadline;
+	}
+	
+	public int getId() {
+		return id;
 	}
 	
 	@Override
