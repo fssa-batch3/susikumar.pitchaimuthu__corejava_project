@@ -13,7 +13,6 @@ public class User {
 	}
 
 	public String getEmail() {
-
 		return email;
 
 	}

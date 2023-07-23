@@ -7,35 +7,35 @@ public class User {
 	String password;
 	long phoneNo;
 
-	private String getName() {
+	 String getName() {
 		return name;
 	}
 
-	private void setName(String newName) {
+	void setName(String newName) {
 		name = newName;
 	}
 
-	private String getEmail() {
+	 String getEmail() {
 		return email;
 	}
 
-	private void setEmail(String newEmail) {
+	 void setEmail(String newEmail) {
 		email = newEmail;
 	}
 
-	private long getPhoneNo() {
+	 long getPhoneNo() {
 		return phoneNo;
 	}
 
-	private void setPhoneNo(long newPhoneNo) {
+	 void setPhoneNo(long newPhoneNo) {
 		phoneNo = newPhoneNo;
 	}
 
-	private String getPassword() {
+	 String getPassword() {
 		return password;
 	}
 
-	private void setPassword(String newPassword) {
+	 void setPassword(String newPassword) {
 		password = newPassword;
 	}
 
