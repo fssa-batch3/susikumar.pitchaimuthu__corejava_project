@@ -1,13 +1,15 @@
 package day11.practice;
 
 import java.sql.Connection;
+import java.sql.SQLException;
 import java.sql.Statement;
 import day11.solved.ConnectionUtil;
 
 public class UserInsertQuery {
 
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args) throws DAOException , SQLException {
 
+    	try {
         // Step 01: Get connection
         Connection connection = ConnectionUtil.getConnection();
         System.out.println(connection);
@@ -28,5 +30,9 @@ public class UserInsertQuery {
 
         // Step 05: Close the connection resources
         ConnectionUtil.close(connection, stmt, null);
+        
+    	} catch (SQLException e) {
+    		throw new DAOException("Error occur while creating the task " + e);
+    	}
     }
 }
