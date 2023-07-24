@@ -4,11 +4,10 @@ import java.util.ArrayList;
 
 class addTask {
 
-	 int taskId;
+	int taskId;
 	String taskName;
-	 String description;
+	String description;
 
-	// Constructor
 	public addTask(int taskId, String taskName, String description) {
 		this.taskId = taskId;
 		this.taskName = taskName;
@@ -22,12 +21,12 @@ class addTask {
 	public String getName() {
 		return taskName;
 	}
-	
+
 	public int getId() {
 		return taskId;
 	}
-	
-	public String getDescription(){
+
+	public String getDescription() {
 		return description;
 	}
 

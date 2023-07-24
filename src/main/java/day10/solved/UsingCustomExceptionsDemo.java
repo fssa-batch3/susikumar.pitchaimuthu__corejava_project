@@ -5,7 +5,6 @@ package day10.solved;
 
  class ValidationException extends Exception {
 	
-	private static final long serialVersionUID = -8105491977357554060L;
 
 	// Calling each super constructors for each of the types
 	public ValidationException(String msg) {
@@ -57,7 +56,6 @@ class TaskValidator {
 public class UsingCustomExceptionsDemo {
 	public static void main(String[] args) {
 		Task task = new Task();
-//		task.setName("Creating test case"); Commenting this so that exception is thrown
 		
 		try {
 			TaskValidator.validate(task);

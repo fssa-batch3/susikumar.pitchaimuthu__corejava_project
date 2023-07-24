@@ -1,6 +1,6 @@
 package day10.practice;
 
-import java.util.Scanner;
+import java.util.Scanner; 
 import java.util.regex.Pattern;
 
 class ValidateEmailException extends Exception {
