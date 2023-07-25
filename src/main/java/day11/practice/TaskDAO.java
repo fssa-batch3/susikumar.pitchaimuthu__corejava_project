@@ -39,7 +39,7 @@ class TaskDAO {
 			ConnectionUtil.close(connection, stmt, null);
 
 		} catch (SQLException e) {
-			throw new DAOException("Error while creating the task.", e);
+			throw new DAOException("Error while creating the task.");
 		}
 	}
 
