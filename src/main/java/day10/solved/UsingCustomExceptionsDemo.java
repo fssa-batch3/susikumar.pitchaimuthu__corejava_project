@@ -6,6 +6,8 @@ package day10.solved;
  class ValidationException extends Exception {
 	
 
+	private static final long serialVersionUID = 1L;
+
 	// Calling each super constructors for each of the types
 	public ValidationException(String msg) {
 		super(msg);
